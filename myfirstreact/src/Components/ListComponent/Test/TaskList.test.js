@@ -8,11 +8,11 @@ test('render add task', () => {
     expect(linkElement).toBeInTheDocument();
   
   });
-  // test('render task list', () => {
-  //   const setStatus = jest.fn()
+  test('render task list', () => {
+    const setStatus = jest.fn()
     
-  //   render(<TaskList />)
+    render(<TaskList />)
   
-  //   expect(setStatus).toHaveBeenCalledTimes(0);
-  // })
+    expect(setStatus).toHaveBeenCalledTimes(0);
+  })
   
