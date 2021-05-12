@@ -13,6 +13,7 @@ test('render todolist', () => {
   const linkElement5 = screen.getByText(/^delete$/i);
   const linkElement6 = screen.getByText(/D?elete/i);
   const linkElement7 =screen.getByText((content, element) => content.startsWith('Dele'));
+ 
   screen.debug();
   screen.debug(screen.getByText('Edit'));
   screen.debug(screen.getAllByText('Delete'));
